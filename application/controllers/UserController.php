@@ -2,7 +2,8 @@
 
 class UserController extends Zend_Controller_Action
 {
-    private $model;
+
+    private $model = null;
 
     public function init()
     {
@@ -14,6 +15,7 @@ class UserController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
+        $this->view->users = $this->model->listUsers();
     }
 
     public function addAction()
@@ -28,7 +30,7 @@ class UserController extends Zend_Controller_Action
                     $upload->addValidator('Size', false, 52428800, 'image');
                     $upload->setDestination(PUBLIC_PATH . '/uploads');
 
-                    $data['photo']=$upload->getFileName();
+                    $data['photo'] = $upload->getFileName();
 
                     $files = $upload->getFileInfo();
                     foreach ($files as $file => $info) {
@@ -36,7 +38,6 @@ class UserController extends Zend_Controller_Action
                             $upload->receive($file);
                         }
                     }
-
                     if ($this->model->addUser($data))
                         $this->redirect('user/index');
                 }
@@ -49,8 +50,31 @@ class UserController extends Zend_Controller_Action
 
     }
 
+    public function deleteAction()
+    {
+        // action body
+        $id = $this->getRequest()->getParam('id');
+        if ($id) {
+            if ($this->model->deleteUser($id))
+                $this->redirect('user/index');
+
+        } else {
+            $this->redirect('user/index');
+        }
+
+    }
+
+    public function editAction()
+    {
+        // action body
+    }
+
 
 }
+
+
+
+
 
 
 

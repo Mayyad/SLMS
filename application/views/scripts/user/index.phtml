@@ -1,4 +1,76 @@
-<br /><br />
+<br/><br/>
 <div id="view-content">
-	<p>View script for controller <b>User</b> and script/action name <b>index</b></p>
+    <p>View script for controller <b>User</b> and script/action name <b>index</b></p>
 </div>
+<br/><br/>
+<br/>
+
+<br/><br/>
+<div id="view-content">
+    <p>View script for controller <b>User</b> and script/action name <b>index</b></p>
+</div>
+<h1>Home Page</h1>
+<br><br>
+<?php /*if($this->users) {
+
+	for($i=0; $i<count($this->users); $i++){
+		echo 'Id: '.$this->users[$i]['id'].'<br />';
+		echo 'Name: '.$this->users[$i]['name'].'<br />';
+		echo 'Email: '.$this->users[$i]['email'].'<br />';
+		echo '<a href="/users/edit/id/'.$this->users[$i]['id'].'"> Edit </a> | ';
+
+		echo '<a href="/users/delete/id/'.$this->users[$i]['id'].'"> Delete </a> <br /> ';
+		echo str_repeat('*', 100).'<br />';
+
+	}
+}*/
+?>
+<div class="container">
+    <br><br><br><br><br><br>
+    <h3 id="add"><a href="/user/register">Add User</a></h3> |
+    <h3 id="login"><a href="/user/login">Login</a></h3>
+
+    <div class="row">
+        <div class="btn-group btn-group-justified">
+
+            <div class="table-responsive">
+                <table class='table table-hover table-striped table-bordered '>
+                    <thead>
+                    <tr>
+
+                        <th> ID</th>
+                        <th> Name</th>
+                        <th> Email</th>
+                        <th> image</th>
+
+                        <th>Function</th>
+
+                    </tr>
+                    </thead>
+                    <?php
+                    if (!$this->users) {
+                        echo "<tr class='info'><td colspan='4'> <h5>No user in db</h5></td></tr>";
+                    } else {
+                        if ($this->users) {
+                            for ($i = 0; $i < count($this->users); $i++) {
+                                echo "<tr class='info'>";
+                                echo "<td>" . $this->users[$i]['id'] . "</td>";
+                                echo "<td>" . $this->users[$i]['name'] . "</td>";
+                                echo "<td>" . $this->users[$i]['email'] . "</td>";
+                               echo' <td><img src="'. $this->users[$i]["photo"] .' " class="img-circle"></td>';
+
+                                echo '<td><a class="btn btn-success"href="/user/edit/id/' . $this->users[$i]['id'] . '"> Edit </a> &nbsp;<a class="btn btn-danger" href="/user/delete/id/' . $this->users[$i]['id'] . '"> Delete </a> <br /></td>';
+                                echo "</tr>";
+
+
+                            }
+                        }
+                    }
+                    ?>
+                </table>
+            </div>
+        </div>
+
+        <div class='col-lg-12 well'>
+            <h1> Main Footer </h1>
+        </div>

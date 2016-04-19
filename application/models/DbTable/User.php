@@ -19,5 +19,14 @@ class Application_Model_DbTable_User extends Zend_Db_Table_Abstract
         $row->role = $data['role'];
         return $row->save();
     }
+
+    function listUsers(){
+
+        return $this->fetchAll()->toArray();
+    }
+
+    function deleteUser($id){
+        return $this->delete('id='.$id);
+    }
 }
 
