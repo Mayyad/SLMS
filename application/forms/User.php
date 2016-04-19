@@ -78,10 +78,10 @@ class Application_Form_User extends Zend_Form
         $country->setLabel('Country');
         $country->setAttrib("class","form-control");
         $country->addMultiOptions(array(
-            '0' => 'Egypt',
-            '1' => 'England',
-            '2' => 'Japan',
-            '3' => 'Chine',
+            'Egypt' => 'Egypt',
+            'England' => 'England',
+            'Japan' => 'Japan',
+            'Chine' => 'Chine',
         ));
 
         $role = new Zend_Form_Element_Select('role');

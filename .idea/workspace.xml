@@ -2,72 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3b5d0e7-b148-424d-a6b8-4d99b115b4d5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flag" afterPath="$PROJECT_DIR$/flag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form" afterPath="$PROJECT_DIR$/form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/1-1.jpg" afterPath="$PROJECT_DIR$/public/static/img/1-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/1-2.jpg" afterPath="$PROJECT_DIR$/public/static/img/1-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/1-3.jpg" afterPath="$PROJECT_DIR$/public/static/img/1-3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/2-1.jpg" afterPath="$PROJECT_DIR$/public/static/img/2-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/2-2.jpg" afterPath="$PROJECT_DIR$/public/static/img/2-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/4-1.jpg" afterPath="$PROJECT_DIR$/public/static/img/4-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/4-2.jpg" afterPath="$PROJECT_DIR$/public/static/img/4-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/4-3.jpg" afterPath="$PROJECT_DIR$/public/static/img/4-3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/4-4.jpg" afterPath="$PROJECT_DIR$/public/static/img/4-4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/4-5.jpg" afterPath="$PROJECT_DIR$/public/static/img/4-5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/Thumbs.db" afterPath="$PROJECT_DIR$/public/static/img/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/bg-1.jpg" afterPath="$PROJECT_DIR$/public/static/img/bg-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/bg-1a.jpg" afterPath="$PROJECT_DIR$/public/static/img/bg-1a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/bg-2.jpg" afterPath="$PROJECT_DIR$/public/static/img/bg-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/bg-3.jpg" afterPath="$PROJECT_DIR$/public/static/img/bg-3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/feature1.jpg" afterPath="$PROJECT_DIR$/public/static/img/feature1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/img/top.png" afterPath="$PROJECT_DIR$/public/static/img/top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-" afterPath="$PROJECT_DIR$/view-" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SLMS.iml" afterPath="$PROJECT_DIR$/.idea/SLMS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/hany.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/hany.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.zfproject.xml" afterPath="$PROJECT_DIR$/.zfproject.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SLMS.sql" afterPath="$PROJECT_DIR$/SLMS.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Bootstrap.php" afterPath="$PROJECT_DIR$/application/Bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/configs/application.ini" afterPath="$PROJECT_DIR$/application/configs/application.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/ErrorController.php" afterPath="$PROJECT_DIR$/application/controllers/ErrorController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/UserController.php" afterPath="$PROJECT_DIR$/application/controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/forms/User.php" afterPath="$PROJECT_DIR$/application/forms/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/DbTable/User.php" afterPath="$PROJECT_DIR$/application/models/DbTable/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/error/error.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/error/error.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/footer.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/footer.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/header.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/header.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/layout.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/layout.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/user/add.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/user/add.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/user/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/user/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/README.txt" afterPath="$PROJECT_DIR$/docs/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/static/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/css/style.css" afterPath="$PROJECT_DIR$/public/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/jquery-1.11.2.min.js" afterPath="$PROJECT_DIR$/public/static/js/jquery-1.11.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/jquery.scrollUp.min.js" afterPath="$PROJECT_DIR$/public/static/js/jquery.scrollUp.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/jquery.singlePageNav.min.js" afterPath="$PROJECT_DIR$/public/static/js/jquery.singlePageNav.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/parallax.js-1.3.1/LICENSE" afterPath="$PROJECT_DIR$/public/static/js/parallax.js-1.3.1/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/parallax.js-1.3.1/README.md" afterPath="$PROJECT_DIR$/public/static/js/parallax.js-1.3.1/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/parallax.js-1.3.1/parallax.js" afterPath="$PROJECT_DIR$/public/static/js/parallax.js-1.3.1/parallax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/parallax.js-1.3.1/parallax.min.js" afterPath="$PROJECT_DIR$/public/static/js/parallax.js-1.3.1/parallax.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/application/controllers/IndexControllerTest.php" afterPath="$PROJECT_DIR$/tests/application/controllers/IndexControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/bootstrap.php" afterPath="$PROJECT_DIR$/tests/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/phpunit.xml" afterPath="$PROJECT_DIR$/tests/phpunit.xml" />
     </list>
     <ignored path="SLMS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,8 +38,8 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/forms/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6581081">
-              <caret line="102" column="54" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.62702703">
+              <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -194,7 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -386,7 +322,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1055,16 +991,17 @@
       <option name="number" value="Default" />
       <updated>1461015849008</updated>
       <workItem from="1461015851390" duration="10423000" />
-      <workItem from="1461059581751" duration="11000" />
+      <workItem from="1461059581751" duration="805000" />
+      <workItem from="1461068104490" duration="138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10434000" />
+    <option name="totallyTimeSpent" value="11366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1600" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1106,6 +1043,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/forms/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1218,8 +1187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/forms/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6581081">
-          <caret line="102" column="54" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.62702703">
+          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
           <folding />
         </state>
       </provider>

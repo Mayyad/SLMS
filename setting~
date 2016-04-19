@@ -1,0 +1,11 @@
+/etc/apache2/apache2.conf 
+
+<VirtualHost 127.0.0.3>
+DocumentRoot "/var/www/html/SLMS/public"
+ServerName course.zend.framework.com
+SetEnv APPLICATION_ENV "development"
+<Directory /var/www/html/SLMS>
+DirectoryIndex index.php
+AllowOverride All
+</Directory>
+</VirtualHost>
