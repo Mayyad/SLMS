@@ -69,14 +69,14 @@ class Application_Form_User extends Zend_Form
         $gender = new Zend_Form_Element_Radio('gender');
         $gender->setLabel('Gender');
         $gender->setRequired();
-        $gender->setValue(array(
+        $gender->addMultiOptions(array(
             '0' => 'Female',
             '1' => 'Male',
         ));
 
         $country = new Zend_Form_Element_Select('country');
         $country->setLabel('Country');
-        $country->setValue(array(
+        $country->addMultiOptions(array(
             '0' => 'Egypt',
             '1' => 'England',
             '2' => 'Japan',
@@ -85,7 +85,7 @@ class Application_Form_User extends Zend_Form
 
         $role = new Zend_Form_Element_Select('role');
         $role->setLabel('Role');
-        $role->setValue(array(
+        $role->addMultiOptions(array(
             'Admin' => 'Admin',
             'User' => 'User',
         ));
