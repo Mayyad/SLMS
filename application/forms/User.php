@@ -69,7 +69,7 @@ class Application_Form_User extends Zend_Form
         $gender = new Zend_Form_Element_Radio('gender');
         $gender->setLabel('Gender');
         $gender->setRequired();
-        $gender->setAttrib("class",array("form-control","col-lg-9" ));
+       // $gender->setAttrib("class",array("form-control","col-lg-9" ));
         $gender->addMultiOptions(array(
             '0' => 'Female',
             '1' => 'Male',
@@ -80,7 +80,7 @@ class Application_Form_User extends Zend_Form
         $country->setAttrib("class",array("form-control","col-lg-9" ));
         $country->addMultiOptions(array(
             'Egypt' => 'Egypt',
-            'England' => 'England', 
+            'England' => 'England',
             'Japan' => 'Japan',
             'Chine' => 'Chine',
         ));
@@ -101,6 +101,7 @@ class Application_Form_User extends Zend_Form
         $submit = new Zend_Form_Element_Submit('submit');
         $submit->setAttrib("class","btn-lg btn-primary");
         $this->setAttrib('enctype', 'multipart/form-data');
+        $this->setAttrib('class','form-horizontal');
         $this->addElements(array($id,$name, $username,$email,$signture,$password,$cpassword,$gender,$country,$role,$photo, $submit));
     }
 

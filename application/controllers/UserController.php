@@ -2,7 +2,8 @@
 
 class UserController extends Zend_Controller_Action
 {
-    private $model;
+
+    private $model = null;
 
     public function init()
     {
@@ -14,6 +15,7 @@ class UserController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
+        $this->view->users = $this->model->listUsers();
     }
 
     public function addAction()
@@ -36,7 +38,6 @@ class UserController extends Zend_Controller_Action
                             $upload->receive($file);
                         }
                     }
-
                     if ($this->model->addUser($data))
                         $this->redirect('user/index');
                 }
@@ -49,8 +50,23 @@ class UserController extends Zend_Controller_Action
 
     }
 
+    public function deleteAction()
+    {
+        // action body
+        
+    }
+
+    public function editAction()
+    {
+        // action body
+    }
+
 
 }
+
+
+
+
 
 
 
