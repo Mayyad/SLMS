@@ -17,7 +17,6 @@ class Application_Form_User extends Zend_Form
 
 
 
-
         $username = new Zend_Form_Element_Text("username");
         $username->setRequired();
         $username->addValidator(new Zend_Validate_Alpha());
@@ -57,18 +56,19 @@ class Application_Form_User extends Zend_Form
         $password->setRequired();
         $password->setlabel("Password : ");
         $password->setAttrib("class","form-control");
-        $password->addValidator(new Zend_Validate_StringLength(array('min' => 5, 'max' => 10)));
+        $password->addValidator(new Zend_Validate_StringLength(array('min' =>1, 'max' => 10)));
 
 
         $cpassword = new Zend_Form_Element_Password("cpassword");
         $cpassword->setRequired();
         $cpassword->setlabel("Confirm Password : ");
         $cpassword->setAttrib("class","form-control");
-        $cpassword->addValidator(new Zend_Validate_StringLength(array('min' => 5, 'max' => 10)));
+        $cpassword->addValidator(new Zend_Validate_StringLength(array('min' => 1, 'max' => 10)));
 
         $gender = new Zend_Form_Element_Radio('gender');
         $gender->setLabel('Gender');
         $gender->setRequired();
+        $gender->setAttrib("class","form-control");
         $gender->addMultiOptions(array(
             '0' => 'Female',
             '1' => 'Male',
@@ -76,6 +76,7 @@ class Application_Form_User extends Zend_Form
 
         $country = new Zend_Form_Element_Select('country');
         $country->setLabel('Country');
+        $country->setAttrib("class","form-control");
         $country->addMultiOptions(array(
             '0' => 'Egypt',
             '1' => 'England',
@@ -85,6 +86,7 @@ class Application_Form_User extends Zend_Form
 
         $role = new Zend_Form_Element_Select('role');
         $role->setLabel('Role');
+        $role->setAttrib("class","form-control");
         $role->addMultiOptions(array(
             'Admin' => 'Admin',
             'User' => 'User',
@@ -92,10 +94,13 @@ class Application_Form_User extends Zend_Form
 
         $photo=new Zend_Form_Element_File('photo');
         $photo->setLabel("Photo");
+        $photo->setAttrib("class","form-control");
         $photo->setAttrib('id','image-file');
-        $submit = new Zend_Form_Element_Submit('submit');
 
-        $this->addElements(array($id,$name, $email,$signture,$password,$cpassword,$gender,$country,$role,$photo, $submit));
+        $submit = new Zend_Form_Element_Submit('submit');
+        $submit->setAttrib("class","btn-lg btn-primary");
+        $this->setAttrib('enctype', 'multipart/form-data');
+        $this->addElements(array($id,$name, $username,$email,$signture,$password,$cpassword,$gender,$country,$role,$photo, $submit));
     }
 
 }

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 18, 2016 at 11:39 PM
+-- Generation Time: Apr 19, 2016 at 09:53 AM
 -- Server version: 5.6.28-0ubuntu0.15.10.1
 -- PHP Version: 5.6.11-1ubuntu3.1
 
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `gender` enum('Male','Female') NOT NULL,
   `country` varchar(250) NOT NULL,
   `signture` varchar(250) NOT NULL,
-  `status` int(11) NOT NULL,
+  `status` varchar(11) NOT NULL DEFAULT 'avalible',
   `role` enum('User','Admin') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
