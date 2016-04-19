@@ -30,7 +30,7 @@ class UserController extends Zend_Controller_Action
                     $upload->addValidator('Size', false, 52428800, 'image');
                     $upload->setDestination(PUBLIC_PATH . '/uploads');
 
-                    $data['photo']=$upload->getFileName();
+                    $data['photo'] = $upload->getFileName();
 
                     $files = $upload->getFileInfo();
                     foreach ($files as $file => $info) {
@@ -53,7 +53,15 @@ class UserController extends Zend_Controller_Action
     public function deleteAction()
     {
         // action body
-        
+        $id = $this->getRequest()->getParam('id');
+        if ($id) {
+            if ($this->model->deleteUser($id))
+                $this->redirect('user/index');
+
+        } else {
+            $this->redirect('user/index');
+        }
+
     }
 
     public function editAction()
