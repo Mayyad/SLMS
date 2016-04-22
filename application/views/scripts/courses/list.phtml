@@ -1,0 +1,47 @@
+<br /><br />
+<div id="view-content">
+	<p>View script for controller <b>Courses</b> and script/action name <b>list</b></p>
+</div>
+<br>
+<br><br><br><br><br><br>
+
+<?php 
+
+if ($this->courses){
+    
+    ?>
+    <h3>Add new Course </h3>
+    <form action="/Courses/add" method="POST" >
+        <label for="course_name" >Course name </label>
+        <input type="text" required="required" placeholder="Course Name" name="course_name" /> <br>
+        <label for="course_photo" > IMG </label>
+        <input type="file" name="course_photo" />
+        <input type="submit" name="submit" class="btn btn-success" value="Add" />
+    </form>
+    
+    
+    <?php
+    for ($count=0 ; $count < count($this->courses) ; $count ++){
+       
+        
+        echo $this->courses[$count]['course_name'];
+        
+        echo $this->courses[$count]['course_photo'];
+        
+        echo '<a href="'.$this->baseUrl().'/Courses/delete/id/'.$this->courses[$count]['course_id'].'" class="btn btn-danger" > Delete </a>';
+        
+        echo '<a href="'.$this->baseUrl().'/Courses/edit/id/'.$this->courses[$count]['course_id'].'" class="btn btn-success" > Edit </a>';
+
+        echo '<br>';
+        } 
+    
+   
+    
+} 
+
+
+else {
+    
+    echo 'No course found ';
+}
+?>
