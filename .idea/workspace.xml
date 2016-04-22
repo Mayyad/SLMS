@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="15df9c87-9b7c-4179-9322-56abf76e823d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/DbTable/Courses.php" afterPath="$PROJECT_DIR$/application/models/DbTable/Courses.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/courses/list.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/courses/list.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/user/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/user/index.phtml" />
     </list>
     <ignored path="SLMS.iws" />
@@ -38,28 +40,40 @@
       <file leaf-file-name="Courses.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/DbTable/Courses.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.46875">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state vertical-scroll-proportion="-18.8125">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/DbTable/User.php">
+      <file leaf-file-name="list.phtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/list.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.9375">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-2.9243243">
+              <caret line="218" column="53" selection-start-line="218" selection-start-column="53" selection-end-line="218" selection-end-column="53" />
+              <folding>
+                <element signature="e#167#822#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/user/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55945945">
-              <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+            <state vertical-scroll-proportion="-13.5">
+              <caret line="42" column="138" selection-start-line="42" selection-start-column="97" selection-end-line="42" selection-end-column="138" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/index.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,9 +98,10 @@
         <option value="$PROJECT_DIR$/application/models/DbTable/User.php" />
         <option value="$PROJECT_DIR$/application/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/application/Bootstrap.php" />
-        <option value="$PROJECT_DIR$/application/models/DbTable/Courses.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/profile.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/user/index.phtml" />
+        <option value="$PROJECT_DIR$/application/models/DbTable/Courses.php" />
+        <option value="$PROJECT_DIR$/application/views/scripts/courses/list.phtml" />
       </list>
     </option>
   </component>
@@ -207,6 +222,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SLMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SLMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="courses" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -977,12 +1018,12 @@
       <option name="number" value="Default" />
       <updated>1461188750964</updated>
       <workItem from="1461188759016" duration="5356000" />
-      <workItem from="1461334734264" duration="15752000" />
+      <workItem from="1461334734264" duration="18108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21108000" />
+    <option name="totallyTimeSpent" value="23464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1600" height="876" extended-state="6" />
@@ -1130,27 +1171,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Courses.php">
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.46875">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.7324324">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/DbTable/User.php">
+    <entry file="file://$PROJECT_DIR$/application/models/DbTable/Courses.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.9375">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state vertical-scroll-proportion="-18.8125">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/user/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55945945">
-          <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+        <state vertical-scroll-proportion="-13.5">
+          <caret line="42" column="138" selection-start-line="42" selection-start-column="97" selection-end-line="42" selection-end-column="138" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/list.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9243243">
+          <caret line="218" column="53" selection-start-line="218" selection-start-column="53" selection-end-line="218" selection-end-column="53" />
+          <folding>
+            <element signature="e#167#822#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
