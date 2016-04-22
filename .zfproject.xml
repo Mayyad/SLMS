@@ -16,6 +16,8 @@
           <actionMethod actionName="add"/>
           <actionMethod actionName="delete"/>
           <actionMethod actionName="edit"/>
+          <actionMethod actionName="login"/>
+          <actionMethod actionName="profile"/>
         </controllerFile>
         <controllerFile controllerName="Courses">
           <actionMethod actionName="index"/>
@@ -60,6 +62,13 @@
           <viewControllerScriptsDirectory forControllerName="User">
             <viewScriptFile forActionName="edit"/>
           </viewControllerScriptsDirectory>
+<<<<<<< HEAD
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="login"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="profile"/>
+=======
           <viewControllerScriptsDirectory forControllerName="Courses">
             <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
@@ -74,6 +83,7 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Courses">
             <viewScriptFile forActionName="update"/>
+>>>>>>> 58269f5066ce900a61654b4a7517d9ab7cc77ec1
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Courses">
             <viewScriptFile forActionName="edit"/>
