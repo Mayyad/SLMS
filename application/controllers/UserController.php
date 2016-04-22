@@ -69,8 +69,23 @@ class UserController extends Zend_Controller_Action
         // action body
     }
 
+    public function loginAction()
+    {
+        // action body
+
+    }
+
+    public function profileAction()
+    {
+        // action body
+    }
+
 
 }
+
+
+
+
 
 
 

@@ -16,6 +16,8 @@
           <actionMethod actionName="add"/>
           <actionMethod actionName="delete"/>
           <actionMethod actionName="edit"/>
+          <actionMethod actionName="login"/>
+          <actionMethod actionName="profile"/>
         </controllerFile>
       </controllersDirectory>
       <formsDirectory>
@@ -48,6 +50,12 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="User">
             <viewScriptFile forActionName="edit"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="login"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="profile"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
