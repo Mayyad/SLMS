@@ -28,5 +28,17 @@ class Application_Model_DbTable_User extends Zend_Db_Table_Abstract
     function deleteUser($id){
         return $this->delete('id='.$id);
     }
+    function getUserById($id){
+        return $this->find($id)->toArray();
+    }
+
+    function getUser($user){
+        $db = Zend_Db_Table::getDefaultAdapter();
+        $select=$db->select()
+            ->from(array('p' => 'user'))
+            ->where('p.email=?',$user)
+            ->ORwhere('p.username=?',$user);
+        return $select->query()->fetchAll();
+    }
 }
 
