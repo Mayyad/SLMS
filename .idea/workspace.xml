@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15df9c87-9b7c-4179-9322-56abf76e823d" name="Default" comment="" />
+    <list default="true" id="15df9c87-9b7c-4179-9322-56abf76e823d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/DbTable/CatCourse.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/DbTable/Category.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/scripts/courses/listone.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.zfproject.xml" afterPath="$PROJECT_DIR$/.zfproject.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/CoursesController.php" afterPath="$PROJECT_DIR$/application/controllers/CoursesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/forms/AddCourse.php" afterPath="$PROJECT_DIR$/application/forms/AddCourse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/DbTable/Courses.php" afterPath="$PROJECT_DIR$/application/models/DbTable/Courses.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/courses/list.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/courses/list.phtml" />
+    </list>
     <ignored path="SLMS.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -36,8 +45,17 @@
         <entry file="file://$PROJECT_DIR$/application/models/DbTable/Courses.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-18.8125">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <marker date="1461356290204" expanded="true" signature="77:1043" placeholder="{...}" />
+                <marker date="1461356290204" expanded="true" signature="146:214" placeholder="..." />
+                <marker date="1461356290204" expanded="true" signature="251:595" placeholder="..." />
+                <marker date="1461356290204" expanded="true" signature="297:343" placeholder="..." />
+                <marker date="1461356290204" expanded="true" signature="385:435" placeholder="..." />
+                <marker date="1461356290204" expanded="true" signature="473:519" placeholder="..." />
+                <marker date="1461356290204" expanded="true" signature="630:1029" placeholder="..." />
+                <marker date="1461356290204" expanded="true" signature="631:914" placeholder="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +63,7 @@
       <file leaf-file-name="list.phtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/list.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.277027">
+            <state vertical-scroll-proportion="14.458108">
               <caret line="469" column="42" selection-start-line="469" selection-start-column="42" selection-end-line="469" selection-end-column="42" />
               <folding>
                 <element signature="e#167#822#0#PHP" expanded="true" />
@@ -1013,12 +1031,12 @@
       <option name="number" value="Default" />
       <updated>1461188750964</updated>
       <workItem from="1461188759016" duration="5356000" />
-      <workItem from="1461334734264" duration="18295000" />
+      <workItem from="1461334734264" duration="18419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23651000" />
+    <option name="totallyTimeSpent" value="23775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1600" height="876" extended-state="6" />
@@ -1177,8 +1195,17 @@
     <entry file="file://$PROJECT_DIR$/application/models/DbTable/Courses.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.8125">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <marker date="1461356290204" expanded="true" signature="77:1043" placeholder="{...}" />
+            <marker date="1461356290204" expanded="true" signature="146:214" placeholder="..." />
+            <marker date="1461356290204" expanded="true" signature="251:595" placeholder="..." />
+            <marker date="1461356290204" expanded="true" signature="297:343" placeholder="..." />
+            <marker date="1461356290204" expanded="true" signature="385:435" placeholder="..." />
+            <marker date="1461356290204" expanded="true" signature="473:519" placeholder="..." />
+            <marker date="1461356290204" expanded="true" signature="630:1029" placeholder="..." />
+            <marker date="1461356290204" expanded="true" signature="631:914" placeholder="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,9 +1225,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/listone.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/list.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.277027">
+        <state vertical-scroll-proportion="14.458108">
           <caret line="469" column="42" selection-start-line="469" selection-start-column="42" selection-end-line="469" selection-end-column="42" />
           <folding>
             <element signature="e#167#822#0#PHP" expanded="true" />

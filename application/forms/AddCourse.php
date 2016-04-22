@@ -2,10 +2,21 @@
 
 class Application_Form_AddCourse extends Zend_Form
 {
-
+    private $arr = array();
+    public function __construct($arr){
+		//$this->ownerId = $ownerId;
+	
+        $this->arr = $arr;
+        parent::__construct();
+	}
+    
+    
     public function init()
     {
         /* Form Elements & Other Definitions Here ... */
+        
+        
+        
         $course_name = new Zend_Form_Element_Text("course_name");
         $course_name->setRequired();
         $course_name->addValidator(new Zend_Validate_Alpha());
@@ -28,14 +39,23 @@ class Application_Form_AddCourse extends Zend_Form
         $course_photo->setAttrib("class",array("form-control","col-lg-9" ));
         $course_photo->setAttrib('id','course-img');
         
-       
+//        $cate = new Application_Model_DbTable_Category();
+//        $categories = $cate->listcat();
+        
+        $category = new Zend_Form_Element_Select('category');
+        $category->setLabel('Cateogry : ');
+        $category->setAttrib("class",array("form-control","col-lg-9" ));
+        
+        $category->setMultiOptions($this->arr);
+        
+        
         $submit = new Zend_Form_Element_Submit('submit');
         $submit->setAttrib("class","btn-lg btn-primary");
         $submit->setAttrib("value", "add");
         $this->setAttrib('enctype', 'multipart/form-data');
         $this->setAttrib('class','form-horizontal');
         
-        $this->addElements(array($course_name , $course_desc , $course_status , $course_photo, $submit ));
+        $this->addElements(array($course_name , $course_desc , $course_status , $course_photo, $category ,  $submit ));
     }
 
 
