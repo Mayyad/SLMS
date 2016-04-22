@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 19, 2016 at 09:53 AM
+-- Generation Time: Apr 22, 2016 at 08:36 PM
 -- Server version: 5.6.28-0ubuntu0.15.10.1
 -- PHP Version: 5.6.11-1ubuntu3.1
 
@@ -66,9 +66,18 @@ CREATE TABLE IF NOT EXISTS `comment` (
 CREATE TABLE IF NOT EXISTS `course` (
   `course_id` int(11) NOT NULL,
   `course_name` varchar(250) NOT NULL,
-  `course_status` int(11) NOT NULL,
-  `owner_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `course_status` enum('Available','Blocked') NOT NULL DEFAULT 'Available',
+  `owner_id` int(11) NOT NULL,
+  `course_desc` varchar(250) NOT NULL,
+  `cousre_photo` varchar(250) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `course`
+--
+
+INSERT INTO `course` (`course_id`, `course_name`, `course_status`, `owner_id`, `course_desc`, `cousre_photo`) VALUES
+(1, 'perl', 'Available', 2, 'this is for perl descriptuion mlzk zHA Kszgdhczb  gvi gr', '/var/www/html/SLMS/public/uploads/097996-black-paint-splatter-icon-social-media-logos-facebook-logo.png');
 
 -- --------------------------------------------------------
 
@@ -130,7 +139,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   `signture` varchar(250) NOT NULL,
   `status` varchar(11) NOT NULL DEFAULT 'avalible',
   `role` enum('User','Admin') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `username`, `password`, `email`, `photo`, `gender`, `country`, `signture`, `status`, `role`) VALUES
+(1, 'hany', 'hany', 'hany', 'hanu', 'AJCBJAKSBBAJSC', 'Male', 'CAIRO', 'HSAJJ', 'avalible', 'User'),
+(2, 'hany', 'hiwow', '81dc9bdb52d04dc20036dbd8313ed055', 'hanysayed.a@gmail.com', '/var/www/html/SLMS/public/uploads/097996-black-paint-splatter-icon-social-media-logos-facebook-logo.png', 'Male', 'Egypt', 'hany', 'avalible', 'User');
 
 --
 -- Indexes for dumped tables
@@ -207,7 +224,7 @@ ALTER TABLE `comment`
 -- AUTO_INCREMENT for table `course`
 --
 ALTER TABLE `course`
-  MODIFY `course_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `course_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `download`
 --
@@ -227,7 +244,7 @@ ALTER TABLE `request`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
