@@ -27,6 +27,7 @@
           <actionMethod actionName="delete"/>
           <actionMethod actionName="update"/>
           <actionMethod actionName="edit"/>
+          <actionMethod actionName="listone"/>
         </controllerFile>
         <controllerFile controllerName="Matrial">
           <actionMethod actionName="index"/>
@@ -46,7 +47,12 @@
         <dbTableDirectory>
           <dbTableFile dbTableName="User"/>
           <dbTableFile dbTableName="Courses"/>
+<<<<<<< HEAD
           <dbTableFile dbTableName="Matrial"/>
+=======
+          <dbTableFile dbTableName="Category"/>
+          <dbTableFile dbTableName="CatCourse"/>
+>>>>>>> 3449ec711f6d88ea68e2e41740282e34f63f65d3
         </dbTableDirectory>
         <modelFile modelName="Courses"/>
         <modelFile modelName="Matrial"/>
@@ -97,6 +103,7 @@
           <viewControllerScriptsDirectory forControllerName="Courses">
             <viewScriptFile forActionName="edit"/>
           </viewControllerScriptsDirectory>
+<<<<<<< HEAD
           <viewControllerScriptsDirectory forControllerName="Index">
             <viewScriptFile forActionName="matrial"/>
           </viewControllerScriptsDirectory>
@@ -114,6 +121,10 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Matrial">
             <viewScriptFile forActionName="edit"/>
+=======
+          <viewControllerScriptsDirectory forControllerName="Courses">
+            <viewScriptFile forActionName="listone"/>
+>>>>>>> 3449ec711f6d88ea68e2e41740282e34f63f65d3
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
