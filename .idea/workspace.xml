@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15df9c87-9b7c-4179-9322-56abf76e823d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/DbTable/Courses.php" afterPath="$PROJECT_DIR$/application/models/DbTable/Courses.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/courses/list.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/courses/list.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/user/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/user/index.phtml" />
-    </list>
+    <list default="true" id="15df9c87-9b7c-4179-9322-56abf76e823d" name="Default" comment="" />
     <ignored path="SLMS.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -50,8 +45,8 @@
       <file leaf-file-name="list.phtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/list.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9243243">
-              <caret line="218" column="53" selection-start-line="218" selection-start-column="53" selection-end-line="218" selection-end-column="53" />
+            <state vertical-scroll-proportion="-1.277027">
+              <caret line="469" column="42" selection-start-line="469" selection-start-column="42" selection-end-line="469" selection-end-column="42" />
               <folding>
                 <element signature="e#167#822#0#PHP" expanded="true" />
               </folding>
@@ -1018,12 +1013,12 @@
       <option name="number" value="Default" />
       <updated>1461188750964</updated>
       <workItem from="1461188759016" duration="5356000" />
-      <workItem from="1461334734264" duration="18108000" />
+      <workItem from="1461334734264" duration="18295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23464000" />
+    <option name="totallyTimeSpent" value="23651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1600" height="876" extended-state="6" />
@@ -1205,8 +1200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/courses/list.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9243243">
-          <caret line="218" column="53" selection-start-line="218" selection-start-column="53" selection-end-line="218" selection-end-column="53" />
+        <state vertical-scroll-proportion="-1.277027">
+          <caret line="469" column="42" selection-start-line="469" selection-start-column="42" selection-end-line="469" selection-end-column="42" />
           <folding>
             <element signature="e#167#822#0#PHP" expanded="true" />
           </folding>
