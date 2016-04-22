@@ -2,25 +2,18 @@
 <div id="view-content">
     <p>View script for controller <b>User</b> and script/action name <b>index</b></p>
 </div>
-<br/><br/>
-<br/>
-
-<br/><br/>
-<div id="view-content">
-    <p>View script for controller <b>User</b> and script/action name <b>index</b></p>
-</div>
 <h1>Home Page</h1>
 <br><br>
 <?php
 
-var_dump( $this->session);
-?>
+echo $this->baseUrl();?>
 <div class="container">
     <br><br><br><br><br><br>
-    <h3 id="add"><a href="/user/register">Add User</a></h3> |
-    <h3 id="login"><a href="/user/login">Login</a></h3>
 
     <div class="row">
+        <h3 id="add"><a href="/user/add">Add User</a></h3> |
+        <h3 id="login"><a href="/user/login">Login</a></h3>
+
         <div class="btn-group btn-group-justified">
 
             <div class="table-responsive">
@@ -47,9 +40,9 @@ var_dump( $this->session);
                                 echo "<td>" . $this->users[$i]['id'] . "</td>";
                                 echo "<td>" . $this->users[$i]['name'] . "</td>";
                                 echo "<td>" . $this->users[$i]['email'] . "</td>";
-                               echo' <td><img src="'. $this->users[$i]["photo"] .' " class="img-circle"></td>';
+                               echo' <td><img src="$this->baseUrl()/'. $this->users[$i]["photo"] .' " class="img-circle"></td>';
 
-                                echo '<td><a class="btn btn-success"href="/user/edit/id/' . $this->users[$i]['id'] . '"> Edit </a> &nbsp;<a class="btn btn-danger" href="/user/delete/id/' . $this->users[$i]['id'] . '"> Delete </a> <br /></td>';
+                                echo '<td><a class="btn btn-success"href="/user/edit/id/' . substr($this->users[$i]['id'],25 ). '"> Edit </a> &nbsp;<a class="btn btn-danger" href="/user/delete/id/' . $this->users[$i]['id'] . '"> Delete </a> <br /></td>';
                                 echo "</tr>";
 
 
