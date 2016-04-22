@@ -10,15 +10,6 @@
 if ($this->courses){
     
  
-//    <h3>Add new Course </h3>
-//    <form action="/Courses/add" method="POST" >
-//        <label for="course_name" >Course name </label>
-//        <input type="text" required="required" placeholder="Course Name" name="course_name" /> <br>
-//        <label for="course_photo" > IMG </label>
-//        <input type="file" name="course_photo" />
-//        <input type="submit" name="submit" class="btn btn-success" value="Add" />
-//    </form>
-    
     echo '<a href="'.$this->baseUrl().'/Courses/add">  Add New Course </a>';
 
     
@@ -27,14 +18,19 @@ if ($this->courses){
     for ($count=0 ; $count < count($this->courses) ; $count ++){
        
         
-        echo $this->courses[$count]['course_name'];
+        echo '<a href= "'.$this->baseUrl().'/Courses/listone/id/'.$this->courses[$count]['course_id'].'">'. $this->courses[$count]["course_name"].' </a>';
         
-        echo $this->courses[$count]['course_photo'];
+        echo $this->courses[$count]['course_desc'];
+            
+        echo '<img src="$this->courses[$count]["course_photo"]" width="30px" height="30px">';
         
+            
         echo '<a href="'.$this->baseUrl().'/Courses/delete/id/'.$this->courses[$count]['course_id'].'" class="btn btn-danger" > Delete </a>';
         
         echo '<a href="'.$this->baseUrl().'/Courses/update/id/'.$this->courses[$count]['course_id'].'" class="btn btn-success" > Edit </a>';
 
+        
+        
         echo '<br>';
         } 
     
