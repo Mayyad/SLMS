@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 22, 2016 at 08:36 PM
+-- Generation Time: Apr 23, 2016 at 09:57 AM
 -- Server version: 5.6.28-0ubuntu0.15.10.1
 -- PHP Version: 5.6.11-1ubuntu3.1
 
@@ -69,15 +69,16 @@ CREATE TABLE IF NOT EXISTS `course` (
   `course_status` enum('Available','Blocked') NOT NULL DEFAULT 'Available',
   `owner_id` int(11) NOT NULL,
   `course_desc` varchar(250) NOT NULL,
-  `cousre_photo` varchar(250) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `course_photo` varchar(250) NOT NULL,
+  `course_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`course_id`, `course_name`, `course_status`, `owner_id`, `course_desc`, `cousre_photo`) VALUES
-(1, 'perl', 'Available', 2, 'this is for perl descriptuion mlzk zHA Kszgdhczb  gvi gr', '/var/www/html/SLMS/public/uploads/097996-black-paint-splatter-icon-social-media-logos-facebook-logo.png');
+INSERT INTO `course` (`course_id`, `course_name`, `course_status`, `owner_id`, `course_desc`, `course_photo`, `course_date`) VALUES
+(2, 'perl', 'Available', 2, 'naslksnklnfasnoiisaoaIOCNOCICOINXEOCO', '/var/www/html/SLMS/public/uploads/097996-black-paint-splatter-icon-social-media-logos-facebook-logo.png', '2016-04-23 06:42:45');
 
 -- --------------------------------------------------------
 
@@ -224,7 +225,7 @@ ALTER TABLE `comment`
 -- AUTO_INCREMENT for table `course`
 --
 ALTER TABLE `course`
-  MODIFY `course_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `course_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `download`
 --
