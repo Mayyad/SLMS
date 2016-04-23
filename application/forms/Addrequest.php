@@ -3,6 +3,16 @@
 class Application_Form_Addrequest extends Zend_Form
 {
 
+    
+    private $arr = array();
+    public function __construct($arr){
+	
+	
+        $this->arr = $arr;
+        parent::__construct();
+	}
+        
+        
     public function init()
     {
         /* Form Elements & Other Definitions Here ... */
@@ -23,7 +33,14 @@ class Application_Form_Addrequest extends Zend_Form
         $this->setAttrib('class','form-horizontal');
         
         
-         $this->addElements(array($request_body ,$submit));
+        $course_id = new Zend_Form_Element_Select('course_id');
+        $course_id->setLabel('Course : ');
+        $course_id->setAttrib("class",array("form-control","col-lg-9" ));
+        
+        $course_id->setMultiOptions($this->arr);
+        
+        
+         $this->addElements(array($request_body , $course_id , $submit));
         
     }
 
