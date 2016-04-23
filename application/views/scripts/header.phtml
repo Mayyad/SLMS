@@ -99,7 +99,7 @@
                     <!-- user -->
                     <li class="dropdown user">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="images/people/110/guy-6.jpg" alt="" class="img-circle"/> Bill<span
+                            <img src="<?php echo substr(Zend_Session::namespaceGet('user')['user'][0]['photo'],25);?>" alt="" class="img-circle"/> <?php echo Zend_Session::namespaceGet('user')['user'][0]['username'];?><span
                                 class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu">
