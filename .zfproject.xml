@@ -28,6 +28,10 @@
           <actionMethod actionName="edit"/>
           <actionMethod actionName="listone"/>
         </controllerFile>
+        <controllerFile controllerName="Request">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="add"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="User"/>
@@ -40,6 +44,7 @@
           <dbTableFile dbTableName="Courses"/>
           <dbTableFile dbTableName="Category"/>
           <dbTableFile dbTableName="CatCourse"/>
+          <dbTableFile dbTableName="Addrequest"/>
         </dbTableDirectory>
         <modelFile modelName="Courses"/>
       </modelsDirectory>
@@ -91,6 +96,12 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Courses">
             <viewScriptFile forActionName="listone"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Request">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Request">
+            <viewScriptFile forActionName="add"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

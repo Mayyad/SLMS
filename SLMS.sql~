@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `course` (
   `owner_id` int(11) NOT NULL,
   `course_desc` varchar(250) NOT NULL,
   `course_photo` varchar(250) NOT NULL,
-  `course_date` datetime NOT NULL 
+  `course_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
