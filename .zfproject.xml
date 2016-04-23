@@ -36,6 +36,7 @@
       <formsDirectory>
         <formFile formName="User"/>
         <formFile formName="AddCourse"/>
+        <formFile formName="Addrequest"/>
       </formsDirectory>
       <layoutsDirectory enabled="false"/>
       <modelsDirectory>
