@@ -5,7 +5,9 @@ class RequestController extends Zend_Controller_Action
 
     private $request_model = null;
     private $course_model = null;
+    private $user_model = null;
     //private $request_form = null;
+    private $user = array();
 
     public function init()
     {
@@ -13,6 +15,7 @@ class RequestController extends Zend_Controller_Action
         //$this->request_form = new Application_Form_Addrequest();
         $this->request_model = new Application_Model_DbTable_Addrequest ();
         $this->course_model = new Application_Model_DbTable_Courses();
+        $this->user_model = new Application_Model_DbTable_User();
     }
 
     public function indexAction()
@@ -47,7 +50,24 @@ class RequestController extends Zend_Controller_Action
     public function listAction()
     {
         // action body
-        $this->view->requests  = $this->request_model->listrequests();
+        $i = 0;
+        $data = $this->request_model->listrequests();
+        //print_r($data);
+        foreach ( $data as  $id ) {
+            $id = $id['owner_id'];
+            $user = $this->user_model->getUserById($id);
+            $owner_name  = $user[0]['name'];
+            $owner_photo = $user[0]['photo'];
+            //echo $owner_name;
+            $data[$i]['owner_name'] = $owner_name;
+            $data[$i]['owner_photo'] = $owner_photo;
+            $i ++;
+        }
+        
+        
+        //print_r($data);
+        
+        $this->view->requests  = $data; 
     }
 
 
