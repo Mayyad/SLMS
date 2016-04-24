@@ -184,24 +184,12 @@ $form->getElement("download")->setErrors(array("It's Not Valid PDF"));
     {
         // action body
 
-$cid = $this->getRequest()->getParam('cid');
+            $cid = $this->getRequest()->getParam('cid');
         if ($cid != null) {
-$this->view->matrials = $this->model->listMatrial($cid);
-}
-
-/*
-$this->getResponse()
-                ->setHeader('Content-type', '   image/gif')
-                ->setHeader('Content-Disposition', 'attachment; filename="2.gif"')
-                ->setHeader('Content-length', filesize(APPLICATION_PATH . "/../public/uploads/2.gif"))
-                ->setHeader('Cache-control', 'private');
-        readfile(APPLICATION_PATH . "/../public/uploads/2.gif");
-        $this->getResponse()->sendResponse();
+            $this->view->matrials = $this->model->listMatrial($cid);
+            }
 
 
-$this->view->layout()->disableLayout();
-        $this->_helper->viewRenderer->setNoRender(true); 
-*/
     }
 
     public function deleteAction()

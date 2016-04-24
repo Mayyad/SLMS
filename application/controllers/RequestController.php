@@ -43,14 +43,13 @@ class RequestController extends Zend_Controller_Action
         $this->view->request = new Application_Form_Addrequest($arr);
         
         $data = $this->getRequest()->getParams();
+        if ($this->getRequest()->isPost()) {
         
-        
-        //print_r($data);
-        $data['owner_id'] = '1';   //id el current user
-        
-        
-        $this->request_model->sendRequest($data);
-        
+            //print_r($data);
+            $data['owner_id'] = '1';   //id el current user
+            $this->request_model->sendRequest($data);
+            $this->redirect('courses/list');
+        }
     }
 
     public function listAction()

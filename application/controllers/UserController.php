@@ -6,7 +6,9 @@ class UserController extends Zend_Controller_Action
     private $model = null;
 
     private $aut = null;
-    private $auth=null;
+
+    private $auth = null;
+
     public function init()
     {
         /* Initialize action controller here */
@@ -35,8 +37,8 @@ class UserController extends Zend_Controller_Action
                     $upload = new Zend_File_Transfer_Adapter_Http();
                     $upload->addValidator('Size', false, 52428800, 'image');
                     $upload->setDestination(PUBLIC_PATH . '/uploads');
-
-                    $data['photo'] = $upload->getFileName();
+                    $data['photo'] = str_replace(PUBLIC_PATH . '/uploads/',"",$upload->getFileName());
+                   // $data['photo'] = $upload->getFileName();
 
                     $files = $upload->getFileInfo();
                     foreach ($files as $file => $info) {
@@ -149,8 +151,24 @@ class UserController extends Zend_Controller_Action
         $this->redirect('user/login');
     }
 
+    public function banAction()
+    {
+        // action body
+        $id = $this->getRequest()->getParam('id');
+        if ($id) {
+            if ($this->model->banUser($id))
+                $this->redirect('user/index');
+
+        } else {
+            $this->redirect('user/index');
+        }
+
+    }
+
 
 }
+
+
 
 
 

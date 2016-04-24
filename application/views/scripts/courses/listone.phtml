@@ -5,9 +5,10 @@
 <br><br><br><br>
 <?php
 
-    print_r($this->course);
+    //print_r($this->course);
 
 ?>
+
 <!-- Fixed navbar -->
 <div class="parallax bg-white page-section">
     <div class="parallax-layer container" data-opacity="true">
@@ -38,199 +39,74 @@
             <div class="page-section">
                 <div class="width-350 width-300-md width-100pc-xs paragraph-inline">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="//www.youtube-nocookie.com/embed/Ycv5fNd4AeM?rel=0"></iframe>
-                    </div>
-                </div>
-                <?php echo $this->course[0]['course_desc'];?>
-                <p class="margin-none">
-                    <span class="label bg-gray-dark">New</span>
-                    <span class="label label-grey-200">WordPress</span>
-                    <span class="label label-grey-200">Beginner</span>
-                </p>
-            </div>
-            <div class="page-section">
+                   <img src="/uploads/<?php echo $this->course[0]['course_photo']; ?>" height="200" width="200">
 
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2 class="text-headline margin-none">What you'll learn</h2>
-                        <p class="text-subhead text-light">A minus obcaecati optio pariatur porro.</p>
-                        <ul class="list-group relative paper-shadow" data-hover-z="0.5" data-animated>
-                            <li class="list-group-item">
-                                <div class="media v-middle">
-                                    <div class="media-left">
-                                        <div class="icon-block s30 bg-red-300 text-white img-circle">
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body text-body-2">
-                                        Basics of GIT and how to become a STAR.
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item paper-shadow">
-                                <div class="media v-middle">
-                                    <div class="media-left">
-                                        <div class="icon-block s30 bg-green-300 text-white img-circle">
-                                            <i class="fa fa-database"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body text-body-2">
-                                        Database connections & some other nice features.
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item paper-shadow">
-                                <div class="media v-middle">
-                                    <div class="media-left">
-                                        <div class="icon-block s30 bg-indigo-300 text-white img-circle">
-                                            <i class="fa fa-trophy"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body text-body-2">
-                                        Eaque ex exercitationem quia reprehenderit?
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item paper-shadow">
-                                <div class="media v-middle">
-                                    <div class="media-left">
-                                        <div class="icon-block s30 bg-orange-300 text-white img-circle">
-                                            <i class="fa fa-code-fork"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body text-body-2">
-                                        Ab distinctio nemo, provident quia quibusdam ullam.
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item paper-shadow">
-                                <div class="media v-middle">
-                                    <div class="media-left">
-                                        <div class="icon-block s30 bg-grey-500 text-white img-circle">
-                                            <i class="fa fa-check"></i>
-                                        </div>
-                                    </div>
-                                    <div class="media-body text-body-2">
-                                        Conclusion & Notes.
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="pull-right">
-                            <a class="btn btn-white btn-circle paper-shadow relative" data-z="1" href="#"><i class="md md-add"></i></a>
-                        </div>
-                        <h2 class="text-headline margin-none">Testimonials</h2>
-                        <p class="text-subhead text-light">A few words from our past students</p>
-                        <div class="slick-basic slick-slider" data-items="1" data-items-lg="1" data-items-md="1" data-items-sm="1" data-items-xs="1">
-                            <div class="item">
-                                <div class="testimonial">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet doloremque enim error id, inventore magni odio odit quo tenetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="media v-middle">
-                                        <div class="media-left">
-                                            <img src="images/people/50/guy-8.jpg" alt="People" class="img-circle width-40" />
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="text-subhead margin-v-5-0">
-                                                <strong>Adrian D. <span class="text-muted">@ Mosaicpro Inc.</span></strong>
-                                            </p>
-                                            <p class="small">
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star-o text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star-o text-yellow-800"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet doloremque enim error id, inventore magni odio odit quo tenetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="media v-middle">
-                                        <div class="media-left">
-                                            <img src="images/people/50/guy-7.jpg" alt="People" class="img-circle width-40" />
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="text-subhead margin-v-5-0">
-                                                <strong>Adrian D. <span class="text-muted">@ Mosaicpro Inc.</span></strong>
-                                            </p>
-                                            <p class="small">
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star-o text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star-o text-yellow-800"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet doloremque enim error id, inventore magni odio odit quo tenetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="media v-middle">
-                                        <div class="media-left">
-                                            <img src="images/people/50/guy-3.jpg" alt="People" class="img-circle width-40" />
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="text-subhead margin-v-5-0">
-                                                <strong>Adrian D. <span class="text-muted">@ Mosaicpro Inc.</span></strong>
-                                            </p>
-                                            <p class="small">
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star-o text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star-o text-yellow-800"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimonial">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet doloremque enim error id, inventore magni odio odit quo tenetur.</p>
-                                        </div>
-                                    </div>
-                                    <div class="media v-middle">
-                                        <div class="media-left">
-                                            <img src="images/people/50/guy-6.jpg" alt="People" class="img-circle width-40" />
-                                        </div>
-                                        <div class="media-body">
-                                            <p class="text-subhead margin-v-5-0">
-                                                <strong>Adrian D. <span class="text-muted">@ Mosaicpro Inc.</span></strong>
-                                            </p>
-                                            <p class="small">
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star-o text-yellow-800"></span>
-                                                <span class="fa fa-fw fa-star-o text-yellow-800"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
+                <h1>This Course Description</h1>
+                <?php echo $this->course[0]['course_desc'];?>
+                
+            </div>
+            
+            <div class="page-section">
+<?php 
+ if($this->user){ 
+}else{
+	echo "YOU ARE NOT AUTHORIZED";
+}
+?>
+<div class="container">
+<div class="row">
+
+	<div class="col-sm-3">
+		<h1>All Matrial</h1> 
+	</div>
+	<div class="col-sm-2">
+   <h4><a href="../../../matrial/add/cid/<?php echo $this->course[0]['course_id'];?>">add Matrial</a></h4> 
+  </div>
+</div>
+<div class="table-responsive">
+			<table style="width:800px" class="table table-striped table-hover table-bordered table-condensed table-hover">
+			<tr>
+                <th>Name</th>
+				<th>Download</th>
+				<th style="width:200px" width="100">Actions</th>
+
+			</tr>
+
+			<?php //print_r($this->matrialModel); 
+                        if($this->matrialModel) { 
+
+			for($i=0; $i<count($this->matrialModel); $i++){?>
+				<tr id='row'>
+				<td><?php echo $this->matrialModel[$i]['name']; ?></td>
+				<td><?php echo $this->matrialModel[$i]['download']; ?></td>
+				
+				<td>
+				 <?php if($this->user->role == 'Admin'){ ?>
+				 <a href="edit?id=<?php echo $this->matrialModel[$i]['id']; ?>" class="text-primary" onclick="editUser('.$user_id.')" id="edit'.$user_id.'"><i class="fa fa-pencil-square-o fa-3x"></i></a>
+				<a href="delete?id=<?php echo $this->matrialModel[$i]['id']; ?>" class="text-danger" onclick="deleteUser('.$user_id.')" id="delete'.$user_id.'"><i class="fa fa-trash-o fa-3x"></i></a>
+
+<?php }else{
+	}?>
+				
+<a href="comment?id=<?php echo $this->matrialModel[$i]['id']; ?>" class="text-danger" onclick="deleteUser('.$user_id.')" id="delete'.$user_id.'"><i class="fa fa-comments fa-3x"></i></a>
+
+
+
+
+<a href="download?id=<?php echo $this->matrialModel[$i]['id']; ?>" class="text-danger" onclick="deleteUser('.$user_id.')" id="delete'.$user_id.'"><i class="fa fa-cloud-download fa-3x"></i></a>
+
+				</td>	
+				</tr><?php
+					}
+}?>
+			
+		</table>
+		</div>
+		</div>
+
+                
             </div>
         </div>
         <div class="col-lg-3 col-md-4">
