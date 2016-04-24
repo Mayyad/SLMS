@@ -25,6 +25,7 @@ class Application_Model_DbTable_Matrial extends Zend_Db_Table_Abstract
         $select=$db->select()
             ->from(array('m' => 'matrial'))
             ->where('m.course_id='.$cid);
+            
         return $select->query()->fetchAll();
     }
 
