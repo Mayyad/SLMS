@@ -1,3 +1,9 @@
+<?php 
+ if($this->user){ 
+}else{
+	echo "YOU ARE NOT AUTHORIZED";
+}
+?>
 <div class="container">
 <div class="row">
 
@@ -23,9 +29,20 @@
 				<tr id='row$user_id'>
 				<td><?php echo $this->matrials[$i]['name']; ?></td>
 				<td><?php echo $this->matrials[$i]['download']; ?></td>
+				
 				<td>
-				<a href="edit?id=<?php echo $this->matrials[$i]['id']; ?>" class="text-primary" onclick="editUser('.$user_id.')" id="edit'.$user_id.'"><i class="fa fa-pencil-square-o fa-3x"></i></a>
+				 <?php if($this->user->role == 'Admin'){ ?>
+				 <a href="edit?id=<?php echo $this->matrials[$i]['id']; ?>" class="text-primary" onclick="editUser('.$user_id.')" id="edit'.$user_id.'"><i class="fa fa-pencil-square-o fa-3x"></i></a>
 				<a href="delete?id=<?php echo $this->matrials[$i]['id']; ?>" class="text-danger" onclick="deleteUser('.$user_id.')" id="delete'.$user_id.'"><i class="fa fa-trash-o fa-3x"></i></a>
+
+<?php }else{
+	}?>
+				
+<a href="comment?id=<?php echo $this->matrials[$i]['id']; ?>" class="text-danger" onclick="deleteUser('.$user_id.')" id="delete'.$user_id.'"><i class="fa fa-comments fa-3x"></i></a>
+
+
+
+
 <a href="download?id=<?php echo $this->matrials[$i]['id']; ?>" class="text-danger" onclick="deleteUser('.$user_id.')" id="delete'.$user_id.'"><i class="fa fa-cloud-download fa-3x"></i></a>
 
 				</td>	

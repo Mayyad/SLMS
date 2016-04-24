@@ -9,10 +9,10 @@
 <br><br>
 
 <?php
-$user_session=Zend_Session::namespaceGet('user');
-var_dump($user_session['user'][0]);
-echo $user_session['user'][0]['name'];
-?>
+//$user_session=Zend_Session::namespaceGet('user');
+//var_dump($user_session['user'][0]);
+//echo $user_session['user'][0]['name'];
+                if($this->user->role == 'Admin'){ ?>
 <div class="container">
     <br><br><br><br><br><br>
 
@@ -62,3 +62,12 @@ echo $user_session['user'][0]['name'];
         <div class='col-lg-12 well'>
             <h1> Main Footer </h1>
         </div>
+<?php
+
+}else{
+
+    echo "YOUR NOT SuPPOSE TO BE HERE";
+}
+
+
+?>

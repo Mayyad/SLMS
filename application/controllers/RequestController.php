@@ -8,12 +8,17 @@ class RequestController extends Zend_Controller_Action
     private $user_model = null;
     //private $request_form = null;
     private $user = array();
-    
+    private $auth=null;
+
 
     public function init()
     {
         /* Initialize action controller here */
         //$this->request_form = new Application_Form_Addrequest();
+         $this->auth = Zend_Auth::getInstance();
+        if($this->auth->hasIdentity()){
+            $this->view->user=$this->auth->getIdentity();
+        }
         $this->request_model = new Application_Model_DbTable_Addrequest ();
         $this->course_model = new Application_Model_DbTable_Courses();
         $this->user_model = new Application_Model_DbTable_User();

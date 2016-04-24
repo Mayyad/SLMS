@@ -1,5 +1,8 @@
 <?php 
+ if($this->user->role == 'Admin'){ 
 echo $this->error;
 echo $this->form;
-
+}else{
+	echo "YOU ARE NOT AUTHORIZED";
+}
 ?>

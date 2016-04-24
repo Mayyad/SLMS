@@ -1,3 +1,8 @@
+<?php 
+
+if($this->user){
+
+?>
 <div class="navbar navbar-default navbar-fixed-top navbar-size-large navbar-size-xlarge paper-shadow" data-z="0"
      data-animated role="navigation">
     <div class="container">
@@ -108,7 +113,7 @@
                             <li><a href="website-student-courses.html"><i class="fa fa-mortar-board"></i> My Courses</a>
                             </li>
                             <li><a href="website-student-profile.html"><i class="fa fa-user"></i> Profile</a></li>
-                            <li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            <li><a href="../../user/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
                         </ul>
                     </li>
                     <!-- // END user -->
@@ -119,3 +124,11 @@
         <!-- /.navbar-collapse -->
     </div>
 </div>
+<?php
+}
+else{
+
+}
+
+
+ ?>

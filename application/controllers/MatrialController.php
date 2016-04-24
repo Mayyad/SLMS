@@ -7,12 +7,18 @@ class MatrialController extends Zend_Controller_Action
 //get file name from url 
 //get it's data from DB (i.e. file type)
 //according to the type & status 
+    private $auth=null;
 
     public function init()
     {
         /* Initialize action controller here */
+         $this->auth = Zend_Auth::getInstance();
+        if($this->auth->hasIdentity()){
+            $this->view->user=$this->auth->getIdentity();
+        }
                 $this->model = new Application_Model_DbTable_Matrial();
-
+    if($this->auth->getIdentity()){}else{$this->redirect('user/login');
+        }
     }
 
     public function indexAction()
