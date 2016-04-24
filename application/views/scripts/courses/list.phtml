@@ -34,6 +34,10 @@ if ($this->courses) {
 ?>
 
     <div class="container">
+                <?php
+                if($this->user->role == 'Admin'){ ?>
+                 <a class="btn btn-primary" href="add">ADD Course</a>
+<?php }?>
         <div class="page-section">
             <div class="row">
                 <div class="col-md-9">

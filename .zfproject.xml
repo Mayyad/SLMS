@@ -19,6 +19,7 @@
           <actionMethod actionName="edit"/>
           <actionMethod actionName="login"/>
           <actionMethod actionName="profile"/>
+          <actionMethod actionName="logout"/>
         </controllerFile>
         <controllerFile controllerName="Courses">
           <actionMethod actionName="index"/>
@@ -41,12 +42,16 @@
           <actionMethod actionName="add"/>
           <actionMethod actionName="list"/>
         </controllerFile>
+        <controllerFile controllerName="Comment">
+          <actionMethod actionName="index"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="User"/>
         <formFile formName="AddCourse"/>
         <formFile formName="AddMatrial"/>
         <formFile formName="Addrequest"/>
+        <formFile formName="Comment"/>
       </formsDirectory>
       <layoutsDirectory enabled="false"/>
       <modelsDirectory>
@@ -57,6 +62,7 @@
           <dbTableFile dbTableName="Category"/>
           <dbTableFile dbTableName="CatCourse"/>
           <dbTableFile dbTableName="Addrequest"/>
+          <dbTableFile dbTableName="Comment"/>
         </dbTableDirectory>
         <modelFile modelName="Courses"/>
         <modelFile modelName="Matrial"/>
@@ -107,7 +113,6 @@
           <viewControllerScriptsDirectory forControllerName="Courses">
             <viewScriptFile forActionName="edit"/>
           </viewControllerScriptsDirectory>
-
           <viewControllerScriptsDirectory forControllerName="Index">
             <viewScriptFile forActionName="matrial"/>
           </viewControllerScriptsDirectory>
@@ -126,10 +131,8 @@
           <viewControllerScriptsDirectory forControllerName="Matrial">
             <viewScriptFile forActionName="edit"/>
           </viewControllerScriptsDirectory>
-
           <viewControllerScriptsDirectory forControllerName="Courses">
             <viewScriptFile forActionName="listone"/>
-
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Request">
             <viewScriptFile forActionName="index"/>
@@ -139,6 +142,12 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Request">
             <viewScriptFile forActionName="list"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="logout"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Comment">
+            <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

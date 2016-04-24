@@ -8,10 +8,14 @@ class CoursesController extends Zend_Controller_Action
     private $catcour_model = null;
     private $cat_cour_data = array();
     private $user_session;
-
+    private $auth=null;
     public function init()
     {
         /* Initialize action controller here */
+         $this->auth = Zend_Auth::getInstance();
+        if($this->auth->hasIdentity()){
+            $this->view->user=$this->auth->getIdentity();
+        }
         $this->model = new Application_Model_DbTable_Courses();
         $this->category_model = new Application_Model_DbTable_Category();
         $this->catcour_model = new Application_Model_DbTable_CatCourse();

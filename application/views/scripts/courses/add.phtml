@@ -2,9 +2,13 @@
 <div id="view-content">
 	<p>View script for controller <b>Courses</b> and script/action name <b>add</b></p>
 </div>
-
+<br> <br> <br> <br> <br>
 
 <?php 
+ 
+                if($this->user->role == 'Admin'){ 
+echo $this->form; }else{
+echo "YOU ARE NOT AUTORIZE";
 
-echo '<br> <br> <br> <br> <br>';
-echo $this->form; ?>
+}
+?>
