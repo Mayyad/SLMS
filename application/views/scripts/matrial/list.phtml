@@ -1,4 +1,39 @@
-<br /><br />
-<div id="view-content">
-	<p>View script for controller <b>Matrial</b> and script/action name <b>list</b></p>
+<div class="container">
+<div class="row">
+
+	<div class="col-sm-3">
+		<h1>All Matrial</h1> 
+	</div>
+	<div class="col-sm-2">
+   <h4><a href="#">add Matrial</a></h4> 
+  </div>
 </div>
+<div class="table-responsive">
+			<table class="table table-striped table-hover table-bordered table-condensed table-hover">
+			<tr>
+                <th>Name</th>
+				<th>Download</th>
+				<th style="width:200px" width="200">Actions</th>
+
+			</tr>
+
+			<?php print_r($this->matrials); if($this->matrials) { 
+
+			for($i=0; $i<count($this->matrials); $i++){?>
+				<tr id='row$user_id'>
+				<td><?php echo $this->matrials[$i]['name']; ?></td>
+				<td><?php echo $this->matrials[$i]['download']; ?></td>
+				<td>
+				<a href="edit?id=<?php echo $this->matrials[$i]['id']; ?>" class="text-primary" onclick="editUser('.$user_id.')" id="edit'.$user_id.'"><i class="fa fa-pencil-square-o fa-3x"></i></a>
+				<a href="delete?id=<?php echo $this->matrials[$i]['id']; ?>" class="text-danger" onclick="deleteUser('.$user_id.')" id="delete'.$user_id.'"><i class="fa fa-trash-o fa-3x"></i></a>
+<a href="download?id=<?php echo $this->matrials[$i]['id']; ?>" class="text-danger" onclick="deleteUser('.$user_id.')" id="delete'.$user_id.'"><i class="fa fa-cloud-download fa-3x"></i></a>
+
+				</td>	
+				</tr><?php
+					}
+}?>
+			
+		</table>
+		</div>
+		</div>
+
