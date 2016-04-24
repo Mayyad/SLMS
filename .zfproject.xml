@@ -20,6 +20,7 @@
           <actionMethod actionName="login"/>
           <actionMethod actionName="profile"/>
           <actionMethod actionName="logout"/>
+          <actionMethod actionName="ban"/>
         </controllerFile>
         <controllerFile controllerName="Courses">
           <actionMethod actionName="index"/>
@@ -148,6 +149,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Comment">
             <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="User">
+            <viewScriptFile forActionName="ban"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

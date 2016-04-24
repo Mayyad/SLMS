@@ -28,6 +28,15 @@ class Application_Model_DbTable_User extends Zend_Db_Table_Abstract
     function deleteUser($id){
         return $this->delete('id='.$id);
     }
+   
+    
+     function banUser($id){
+		$record = $this->find($id)->toArray();
+		$status = $record['status'] ? 'Available' : 'Ban';
+		$data = array("status" => $status);
+		$where = "id = ".$id;
+		return $this->update($data,$where);
+	}
     function getUserById($id){
         return $this->find($id)->toArray();
     }

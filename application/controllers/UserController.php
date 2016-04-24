@@ -6,7 +6,9 @@ class UserController extends Zend_Controller_Action
     private $model = null;
 
     private $aut = null;
-    private $auth=null;
+
+    private $auth = null;
+
     public function init()
     {
         /* Initialize action controller here */
@@ -149,8 +151,24 @@ class UserController extends Zend_Controller_Action
         $this->redirect('user/login');
     }
 
+    public function banAction()
+    {
+        // action body
+        $id = $this->getRequest()->getParam('id');
+        if ($id) {
+            if ($this->model->banUser($id))
+                $this->redirect('user/index');
+
+        } else {
+            $this->redirect('user/index');
+        }
+
+    }
+
 
 }
+
+
 
 
 
