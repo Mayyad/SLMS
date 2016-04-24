@@ -4,9 +4,15 @@
 </div>
 <h1>Home Page</h1>
 <br><br>
-<?php
+<br><br>
+<br><br>
+<br><br>
 
-echo $this->baseUrl();?>
+<?php
+$user_session=Zend_Session::namespaceGet('user');
+var_dump($user_session['user'][0]);
+echo $user_session['user'][0]['name'];
+?>
 <div class="container">
     <br><br><br><br><br><br>
 

@@ -36,9 +36,10 @@
     <?php echo $this->headStyle() ?>
 </head>
 <body>
+<div class="transition-navbar-scroll top-navbar-xlarge bottom-footer">
 
 
-<?php //echo $this->render('header.phtml') ?>
+<?php echo $this->render('header.phtml') ?>
 
 <div id="content"><?php echo $this->layout()->content ?></div>
 
@@ -91,5 +92,6 @@
 <script src="<?php echo $this->baseUrl(); ?>/static/js/module-messages.min.js"></script>
 <script src="<?php echo $this->baseUrl(); ?>/static/js/module-charts-flot.min.js"></script>
 <script src="<?php echo $this->baseUrl(); ?>/static/js/theme-core.min.js"></script>
+    </div>
 </body>
 </html>

@@ -88,9 +88,15 @@ class UserController extends Zend_Controller_Action
 
             $result = $authAdapter->authenticate();
             if ($result->isValid()) {
-                $this->session->user=$this->model->getUser($username);
-                //var_dump( $this->view->session = $this->session->user);
-                $this->redirect('user/index');
+                $session=new Zend_Session_Namespace('user');
+
+                $session->user=$this->model->getUser($username);
+                //var_dump($session);
+//                $new=new Zend_View();
+//                $new->setScriptPath('user/index');
+//                $new->ss="hello";
+//                //var_dump( $this->view->session = $this->session->user);
+              $this->redirect('user/index');
 
             } else {
                 echo "auth fail";
