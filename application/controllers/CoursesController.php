@@ -12,6 +12,7 @@ class CoursesController extends Zend_Controller_Action
     public function init()
     {
         /* Initialize action controller here */
+        
          $this->auth = Zend_Auth::getInstance();
         if($this->auth->hasIdentity()){
             $this->view->user=$this->auth->getIdentity();
@@ -32,6 +33,8 @@ class CoursesController extends Zend_Controller_Action
     {
 
         $this->view->courses = $this->model->listCourses();
+        $this->view->category=$this->category_model->listcat();
+        
 
     }
 
@@ -146,8 +149,9 @@ class CoursesController extends Zend_Controller_Action
         $id = $this->getRequest()->getParam('id');
 
         $course = $this->model->returnCourse($id);
-
+$matrialModel=new Application_Model_DbTable_Matrial();
         $this->view->course = $course;
+        $this->view->matrialModel=$matrialModel->listMatrial($id);
 
     }
 

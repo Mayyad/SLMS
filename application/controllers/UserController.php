@@ -37,8 +37,8 @@ class UserController extends Zend_Controller_Action
                     $upload = new Zend_File_Transfer_Adapter_Http();
                     $upload->addValidator('Size', false, 52428800, 'image');
                     $upload->setDestination(PUBLIC_PATH . '/uploads');
-
-                    $data['photo'] = $upload->getFileName();
+                    $data['photo'] = str_replace(PUBLIC_PATH . '/uploads/',"",$upload->getFileName());
+                   // $data['photo'] = $upload->getFileName();
 
                     $files = $upload->getFileInfo();
                     foreach ($files as $file => $info) {

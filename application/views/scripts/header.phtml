@@ -65,38 +65,15 @@ if($this->user){
         <div class="collapse navbar-collapse" id="main-nav">
             <ul class="nav navbar-nav navbar-nav-margin-left">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html">Home page</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="tutors.html">Tutors</a></li>
-                        <li><a href="survey.html">Survey</a></li>
-                        <li><a href="website-forum.html">Forum Home</a></li>
-                        <li><a href="website-forum-category.html">Forum Category</a></li>
-                        <li><a href="website-forum-thread.html">Forum Thread</a></li>
-                        <li><a href="website-blog.html">Blog Listing</a></li>
-                        <li><a href="website-blog-post.html">Blog Post</a></li>
-                        <li><a href="website-contact.html">Contact</a></li>
-                    </ul>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home page</a>
+                    
                 </li>
                 <li class="dropdown active">
                     <a href="../../../Courses/list" >Courses <span
                             class="caret"></span></a>
 
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="website-student-dashboard.html">Dashboard</a></li>
-                        <li><a href="website-student-courses.html">My Courses</a></li>
-                        <li><a href="website-take-course.html">Take Course</a></li>
-                        <li><a href="website-course-forums.html">Course Forums</a></li>
-                        <li><a href="website-take-quiz.html">Take Quiz</a></li>
-                        <li><a href="website-student-messages.html">Messages</a></li>
-                        <li><a href="website-student-profile.html">Private Profile</a></li>
-                    </ul>
-                </li>
+              
 
             </ul>
             <div class="navbar-right">
@@ -104,7 +81,7 @@ if($this->user){
                     <!-- user -->
                     <li class="dropdown user">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="<?php echo substr(Zend_Session::namespaceGet('user')['user'][0]['photo'],25);?>" alt="" class="img-circle"/> <?php echo Zend_Session::namespaceGet('user')['user'][0]['username'];?><span
+                            <img src="/uploads/<?php echo $this->user->photo;?>" alt="" class="img-circle"/> <?php echo Zend_Session::namespaceGet('user')['user'][0]['username'];?><span
                                 class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu">
@@ -112,18 +89,18 @@ if($this->user){
                             </li>
                             <li><a href="website-student-courses.html"><i class="fa fa-mortar-board"></i> My Courses</a>
                             </li>
-                            <li><a href="website-student-profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                            <li><a href="../user/profile"><i class="fa fa-user"></i> Profile</a></li>
                             <li><a href="../../user/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
                         </ul>
                     </li>
                     <!-- // END user -->
                 </ul>
-                <a href="login.html" class="navbar-btn btn btn-primary">Log In</a>
             </div>
         </div>
         <!-- /.navbar-collapse -->
     </div>
 </div>
+<br><br><br><br><br><br><br><br>
 <?php
 }
 else{

@@ -46,7 +46,7 @@
                                 echo "<td>" . $this->users[$i]['id'] . "</td>";
                                 echo "<td>" . $this->users[$i]['name'] . "</td>";
                                 echo "<td>" . $this->users[$i]['email'] . "</td>";
-                                echo' <td><img src="'. substr($this->users[$i]["photo"],25) .' " class="img-circle" height="60" width="60"></td>';
+                                echo' <td><img src="/uploads/'. $this->users[$i]["photo"] .' " class="img-circle" height="60" width="60"></td>';
                                 echo '<td><a class="btn btn-success"href="/user/edit/id/' . $this->users[$i]['id']. '"> Edit </a> &nbsp;<a class="btn btn-danger" href="/user/delete/id/' . $this->users[$i]['id'] . '"> Delete </a>';
                                         if($this->users[$i]['status']=='Available'){
                                             echo '&nbsp;<a class="btn btn-warning" href="/user/ban/id/' . $this->users[$i]['id'] . '"> Ban </a>'
