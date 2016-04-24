@@ -37,8 +37,9 @@
                             </div>
                             <div class="col-md-10">
                                 
-                                <p style="padding-left:55px;font-size:1.3em;"><strong><?php echo  $this->requests[$count]['owner_name'];  ?></strong></p>
-                                <p style="padding-left:55px;font-size:1.3em;"><?php echo  $this->requests[$count]['request_time'];  ?></p>
+                                <p style="padding-left:55px;font-size:1.3em;"><strong><?php echo  "from :".$this->requests[$count]['owner_name'];  ?></strong></p>
+                                <p style="padding-left:55px;font-size:1.3em;"><?php echo "course :". $this->requests[$count]['course_name'];  ?></p>
+                                <p> <?php echo  $this->requests[$count]['request_time'];  ?>  </p>
                                 <hr>
                             </div>
                             
